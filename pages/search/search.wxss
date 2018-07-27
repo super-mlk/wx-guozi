@@ -1,0 +1,105 @@
+/* pages/search/search.wxss */
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/*头部搜索  */
+
+.container .headerSearch {
+  width: 100%;
+  height: 64rpx;
+  margin-top: 12rpx;
+  margin-bottom: 12rpx;
+}
+
+.container .headerSearch .sousuo {
+  width: 72%;
+  height:60rpx;
+  border-radius: 10px;
+  margin-left: 20rpx;
+  background: #f5f5f5;
+  float: left;
+}
+
+.container .headerSearch .sousuo image {
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-left: 12rpx;
+  float: left;
+  margin-top: 18rpx;
+}
+
+.container .headerSearch .sousuo input {
+  width: 80%;
+  height: 32rpx;
+  float: left;
+  font-size: 24rpx;
+  color: #ccc;
+  margin-left: 20rpx; 
+  line-height: 32rpx;
+  margin-top: 8rpx;
+}
+
+.container .quxiao {
+  width: 24%;
+  height: 60rpx;
+  float: right;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.container .quxiao text {
+  font-size: 24rpx;
+  letter-spacing: 4rpx;
+  color: #ff8824;
+}
+
+/*导航  */
+
+.nav {
+  width: 100%;
+  height: 80rpx;
+  border-top: 1px solid #eee;
+  border-bottom:1px solid #eee;
+}
+
+.nav .nav-info {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.nav .nav-info span {
+  width: 33%;
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 28rpx;
+  border-right: 1px solid #eee;
+}
+
+.nav .nav-info span:last-child {
+  border-right: none;
+}
+
+.nav .nav-info .nav-active {
+  color: #2da1dc;
+}
+
+/*搜索历史  */
+
+.container .searchHistory {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+}
+
+.container .searchHistory text{
+  height: 60rpx;
+  display: block;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  padding-left: 20rpx;
+}

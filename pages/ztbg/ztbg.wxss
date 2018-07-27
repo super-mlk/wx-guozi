@@ -1,0 +1,108 @@
+/**index.wxss**/
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+.nav {
+  height: 88rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  background: #fff;
+  font-size: 32rpx;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-bottom:1px solid #ccc;
+}
+
+.nav-item {
+  display: inline-block;
+  text-align: center;
+  font-size: 28rpx;
+  height: auto;
+  margin-right: 16rpx;
+}
+
+.nav-item.active {
+  color: #2da1dc;
+  border-bottom:2px solid #2da1dc;
+}
+
+.tab-box {
+  background: #fff;
+  padding-top: 80rpx;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.tab-content {
+  overflow-y: scroll;
+}
+
+.report {
+  width: 100%;
+  height: 168rpx;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 20rpx;
+  padding-bottom:20rpx;
+}
+
+.report .report-info {
+  width: 64%;
+  height: auto;
+  float: left;
+  clear: both;
+}
+
+.report .report-info .base-info {
+  font-family: "宋体";
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+
+.report .report-info .base-info p {
+  width: 100%;
+  display: block;
+}
+
+.report .report-info .base-info p:first-child {
+  width: 100%;
+  height: 60rpx;
+  font-size: 28rpx;
+}
+
+.report .report-info .base-info p:last-child {
+  color: #d5d5d5;
+  font-size: 24rpx;
+  margin-top: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  height: 64rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.report .pic {
+  width: 30%;
+  height: 188rpx;
+  float: right;
+  margin-right: 20rpx;
+}
+
+.report .pic image {
+  width: 100%;
+  height: 160rpx;
+  border:2px solid #f0f0f0;
+}

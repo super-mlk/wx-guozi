@@ -1,0 +1,184 @@
+.content {
+  width: 100%;
+  height: auto;
+  /* background: #2da1dc; */
+}
+
+/*搜索烂  */
+
+.headerSearch {
+  width: 100%;
+  height: 72rpx;
+  background: #2da1dc;
+  padding-top: 12rpx;
+}
+
+/*搜索栏放大镜  */
+
+.headerSearch image {
+  width: 30rpx;
+  height: 30rpx;
+  z-index: 999;
+  line-height: 30rpx;
+  vertical-align: -4rpx;
+  margin-right: 10rpx;
+}
+
+/*搜索栏文本框  */
+
+.headerSearch .sousuo {
+  width: 90%;
+  height: 60rpx;
+  background: #fff;
+  margin-left: 5%;
+  text-align: center;
+  font-size: 28rpx;
+  font-family: "微软雅黑";
+  border-radius: 30px;
+  color: #bcbcbc;
+  line-height: 60rpx;
+}
+
+/*滚动图片  */
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.banner image {
+  width: 100%;
+  height: 150px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/*中间导航栏  */
+
+.nav {
+  width: 100%;
+  height: 172rpx;
+}
+
+.publicNav {
+  width: 20%;
+  height: auto;
+  font-size: 32rpx;
+  font-family: "微软雅黑";
+  float: left;
+}
+
+.publicNav span {
+  width: 104rpx;
+  height: auto;
+  display: block;
+  margin-top: 24rpx;
+  margin-left: 12rpx;
+  text-align: center;
+}
+
+.publicNav span image {
+  width: 72rpx;
+  height: 72rpx;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.publicNav .bannner-info span {
+  width: 104rpx;
+  height: auto;
+  margin: 0 auto;
+  line-height: 1.3;
+  font-size: 24rpx;
+  margin-top: 12rpx;
+}
+
+/*分割线  */
+
+.hr {
+  width: 100%;
+  height: 12rpx;
+  background: #f0f0f0;
+}
+
+.new-information {
+  clear: both;
+  width: 100%;
+  height: auto;
+}
+
+.new-information .introduce {
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.new-information .introduce span {
+  margin-top: 20rpx;
+  margin-left: 12rpx;
+  font-size: 28rpx;
+  font-family: "微软雅黑";
+  height: 72rpx;
+  display: block;
+}
+
+.new-information .introduce span:first-child {
+  float: left;
+  color: #616161;
+}
+
+.new-information .introduce span:last-child {
+  float: right;
+  margin-right: 20rpx;
+  color: #dbdbdb;
+  font-size: 24rpx;
+}
+
+.newInfo {
+  width: 100%;
+  height: 180rpx;
+  overflow: hidden;
+  margin-bottom: 12rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.new-information .newInfo:last-child{
+  border: none;
+}
+
+.newInfo .info {
+  width: 60%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-left: 20rpx;
+}
+
+.newInfo .info p {
+  color: #212121;
+  display: block;
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+  height: 80rpx;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+.newInfo .info span {
+  color: #ccc;
+  font-size: 28rpx;
+  display: block;
+  height: 80rpx;
+  overflow: hidden;
+}
+
+.newInfo .pic {
+  width: 30%;
+  float: right;
+  margin-right: 12rpx;
+}
+
+.newInfo .pic image {
+  width: 100%;
+  height: 160rpx;
+}

@@ -1,0 +1,117 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.container .listSqlList {
+  
+  height: auto;
+  padding:20rpx 20rpx 0;
+}
+
+.container .listSqlList .listsql {
+  height: 200rpx;
+  display:table;
+  flex-direction: row;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #e8e8e8;
+  padding-top: 20rpx;width:100%;
+}
+.container .listSqlList .listsql:last-child{border-bottom:none;}
+
+
+.container .listSqlList .listsql:nth-child(1) {
+  padding-top: 0rpx;
+}
+
+.container .listSqlList .listsql .ls-pic {
+  width:170rpx;white-space:nowrap;
+}
+
+.container .listSqlList .listsql .ls-pic image {
+  width: 100%;
+  height: 200rpx;border-radius:8rpx;
+}
+
+/* 中间内容 */
+.container .listSqlList .listsql .ls-main{
+    width: 100%;
+    flex-direction: column;
+    position: relative;display:table-cell;vertical-align: top;padding:0 0 0 20rpx;
+}
+
+.container .listSqlList .listsql .ls-top {
+  width: 100%;
+  height: auto;
+  display:table;margin-bottom: 20rpx;
+}
+
+.container .listSqlList .listsql .ls-top text {
+  width: auto;
+  height: auto;
+  display: block;
+  
+}
+
+.container .listSqlList .listsql .ls-top .ls-title {
+  font-size: 28rpx;width:100%;display:table-cell;padding:0 20rpx 0 0;
+}
+ 
+/* 价格 */
+.container .listSqlList .listsql .ls-top .money{
+    width: auto;
+    height: 30rpx;
+    font-size: 28rpx;display:table-cell;white-space:nowrap;
+    line-height: 30rpx;
+    color: #2da1dc;
+    margin-right: 20rpx;
+}
+
+.container .listSqlList .listsql .ls-main .ls-content{
+    width: 92%;
+}
+
+.container .listSqlList .listsql .ls-main .ls-content text{
+  height: 125rpx;
+  display: block;
+  font-size: 12px;
+  word-break: break-all;
+  overflow: hidden;color:#a8a8a8;
+}
+
+/* 右箭头 */
+.container .listSqlList .listsql .ls-main .ls-right{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.container .listSqlList .listsql .ls-main .ls-right image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/* .container .listSqlList .listsql .ls-main{
+    width: 100%;
+    height: 200rpx;
+} */
+
+
+.container .listSqlList .listsql .ls-top .ls-info {
+  font-size: 24rpx;
+  height: 134rpx;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+/* .container .listSqlList .listsql .money text{
+    font-size: 20rpx;
+} */

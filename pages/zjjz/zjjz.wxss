@@ -1,0 +1,118 @@
+/* pages/expertTalks/expertTalks.wxss */
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/*专家列表  */
+
+.container .content {
+  width: 90%;
+  height: 600rpx;
+  margin: 20rpx auto 0;
+}
+
+.container .content .specialist {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+  position: relative;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+
+.container .content .specialist .person-pic {
+  width: 30%;
+  height: 200rpx;
+}
+
+.container .content .specialist .person-pic image {
+  width: 100%;
+  height: 200rpx;
+}
+
+.container .content .specialist .article {
+  width: 65%;
+  height: 200rpx;
+  margin-left: 5%;
+}
+
+.container .content .specialist .article text {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin-bottom: 16rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .content .specialist .article .title {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.container .content .specialist .article .synopsis {
+  font-size: 26rpx;
+  color: #808080;
+}
+
+.container .content .specialist .article .update {
+  width: 100%;
+  height: auto;
+  font-size: 24rpx;
+  color: #808080;
+}
+
+.container .content .specialist .article .extra {
+  font-size: 26rpx;
+  color: #4c4c4c;
+  margin-bottom: 0;
+}
+
+.container .content .specialist .article .extra text{
+  width: auto;
+  height: auto;
+  display: block;
+  float: left;
+}
+
+.container .content .specialist .article .extra text:first-child{
+  color: #ff6b00;
+  font-size: 28rpx;
+}
+
+.container .content .specialist .info {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 32rpx;
+}
+
+.container .content .specialist .info text {
+  width: 100%;
+  height: auto;
+  display: block;
+  font-size: 20rpx;
+  color: #999999;
+  text-align: right;
+}
+
+
+/*右箭头  */
+.container .content .right-pic{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 0;
+  top: 54px;
+}
+.container .content .right-pic image{
+  width: 40rpx;
+  height: 40rpx;
+}

@@ -1,0 +1,50 @@
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+.container .onlineVideo{
+  width: 100%;
+  height: 400rpx;
+}
+
+.container .operation{
+  width: 100%;
+  height: 400rpx;
+  background: #f9f9f9;
+}
+
+.container .operation .title{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.container .operation .title text{
+  width: 80%;
+  height: 80rpx;
+  display: block;
+  margin-left: 20rpx;
+  font-size: 36rpx;
+}
+
+.container .operation .info{
+  width: 96%;
+  height: auto;
+  margin-left: 16rpx;
+  font-size: 28rpx;
+}
+
+.container .onlineVideo {
+  height: 340rpx;
+  margin-top:16rpx;
+}
+
+video {
+  width: 94%;
+  height: 340rpx;
+  margin-left: 20rpx;
+}
+

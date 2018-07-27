@@ -1,0 +1,188 @@
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container .header {
+    width: 100%;
+    height: 280rpx;
+    margin-top: 20rpx;
+}
+
+.container .header image {
+    width: 100%;
+    height: 280rpx;
+}
+
+.container .info {
+    width: 100%;
+    height: auto;
+    border-bottom: 10px solid #e6e6e6;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .info view {
+    width: 100%;
+    height: auto;
+    line-height: 80rpx;
+    font-size: 28rpx;
+    margin-left: 20rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .info view text:nth-child(1) {
+   width: 175rpx;
+   height: auto;
+    display: block;
+    float: left;
+}
+
+.container .info view text:nth-child(2) {
+    width: 600rpx;
+    height: auto;
+    display: block;
+    margin-left: 10rpx;
+    margin-right: 30rpx;
+}
+
+.container .info .gbhzz {
+}
+
+.container .info .fbrq {
+}
+
+.container .info .sjly {
+}
+
+.container .info .zy {
+}
+
+.container .correlation {
+    width: 90%;
+    height: 100rpx;
+    line-height: 100rpx;
+    margin: 0 auto;
+}
+
+.container .correlation text:first-child {
+    float: left;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+
+.container .correlation text:last-child {
+    float: right;
+    font-size: 28rpx;
+}
+
+/*专家列表  */
+
+.container .content {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 30rpx;
+}
+
+.container .content .specialist {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40rpx;
+    position: relative;
+}
+
+.container .content view:last-child {
+    margin-bottom: 200rpx;
+}
+
+.container .content .specialist .person-pic {
+    width: 30%;
+    height: 200rpx;
+}
+
+.container .content .specialist .person-pic image {
+    width: 100%;
+    height: 200rpx;
+}
+
+.container .content .specialist .article {
+    width: 65%;
+    height: 200rpx;
+    margin-left: 5%;
+}
+
+.container .content .specialist .article text {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 16rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container .content .specialist .article .title {
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+.container .content .specialist .article .synopsis {
+    font-size: 26rpx;
+    color: #808080;
+}
+
+.container .content .specialist .article .update {
+    font-size: 24rpx;
+    color: #808080;
+}
+
+.container .content .specialist .article .extra {
+    font-size: 26rpx;
+    color: #4c4c4c;
+    margin-bottom: 0;
+}
+
+.container .content .specialist .purcharse {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 20rpx;
+    top: 0px;
+}
+
+.container .content .specialist .purcharse text {
+    color: #ff6b00;
+}
+
+.container .feature {
+    width: 100%;
+    height: 120rpx;
+    background: red;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.container .feature text {
+    width: 50%;
+    height: 120rpx;
+    display: block;
+    line-height: 120rpx;
+    text-align: center;
+    font-size: 30rpx;
+}
+
+.container .feature .free {
+    float: left;
+    background: #f4f1eb;
+}
+
+.container .feature .money {
+    float: right;
+    background: #2da1dc;
+    color: #fff;
+}

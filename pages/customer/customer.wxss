@@ -1,0 +1,150 @@
+/* pages/personalCenter /personalCenter .wxss */
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.container .header {
+  width: 100%;
+  height: 160rpx;
+}
+
+.container .header .headPortraits {
+  width: 112rpx;
+  height: 112rpx;
+  float: left;
+  margin-left: 40rpx;
+  border-radius: 50%;
+  border: 2px solid #2da1dc;
+  margin-top: 22rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .header .headPortraits image {
+  width: 104rpx;
+  height: 104rpx;
+  border-radius: 50%;
+  border: 1px solid #2da1dc;
+}
+
+.container .header .vip {
+  height: 160rpx;
+  color: #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160rpx;
+  float: left;
+}
+
+.container .header .vip .vip-content text:first-child {
+  color: #1e1e1e;
+  font-size: 28rpx;
+}
+
+.container .header .vip .vip-content text:last-child {
+  color: #bdbdbd;
+  font-size: 24rpx;
+}
+
+.container .header .vip text {
+  font-size: 24rpx;
+  display: block;
+}
+
+/*个人信息  */
+
+.container .person {
+  width: 100%;
+  height: auto;
+  border-top: 4px solid #f0f0f0;
+  border-bottom: 4px solid #f0f0f0;
+}
+
+.container .personInfo {
+  width: 100%;
+  height: 80rpx;
+}
+
+.container .personInfo .icon {
+  width: 14%;
+  height: 80rpx;
+  float: left;
+  line-height: 80rpx;
+}
+
+.container .personInfo .icon image {
+  width: 40rpx;
+  height: 40rpx;
+  padding-left: 40rpx;
+  vertical-align: middle;
+}
+
+.container .personInfo .icon text {
+  color: #212121;
+  padding-left: 20rpx;
+  letter-spacing: 4rpx;
+  font-size: 28rpx;
+}
+
+.container .personInfo .more {
+  width: 86%;
+  height: 80rpx;
+  float: left;
+  text-align: left;
+  line-height: 80rpx;
+  border-bottom: 1px solid #efefef;
+}
+
+.container .personInfo:last-child{
+  height: 88rpx;
+}
+
+.container .personInfo:last-child .more {
+  border-bottom: 0;
+}
+
+.container .personInfo .more text:first-child {
+  float: left;
+  padding-left: 12rpx;
+}
+
+.container .personInfo .more text:last-child {
+  float: right;
+}
+
+.container .personInfo .more text {
+  font-size: 32rpx;
+  margin-right: 30rpx;
+  color: #797979;
+}
+
+.container .footer {
+  width: 100%;
+  height: 72rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.container .footer text {
+  border-bottom: 2px solid #e0e0e0;
+  color: #e0e0e0;
+  font-size: 24rpx;
+}
+
+.container .footer text:first-child {
+  margin-right: 8rpx;
+}
+
+.container .footer text:nth-child(2) {
+  font-size: 20rpx;
+  margin-bottom: 4rpx;
+}
+
+.container .footer text:last-child {
+  margin-left: 8rpx;
+}

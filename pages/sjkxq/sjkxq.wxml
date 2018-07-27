@@ -1,0 +1,54 @@
+<!--数据库详情  -->
+<view class='container'>
+  <view class='header'>
+    <image src='../../assets/img/banner02.jpg' mode='aspectFit'></image>
+  </view>
+
+  <!--标题  -->
+  <view class='info'>
+    <view class='gbhzz'>
+      <text>国别或组织 :</text>
+      <text>{{gbhzz}}</text>
+    </view>
+    <view class='fbrq'>
+      <text>发布日期 :</text>
+      <text>{{fbrq}}</text>
+    </view>
+    <view class='sjly'>
+      <text>数据来源 :</text>
+      <text>{{sjly}}</text>
+    </view>
+    <view class='zy'>
+      <text>摘　　要 :</text>
+      <text>{{zy}}</text>
+    </view>
+  </view>
+
+  <view class='correlation'>
+    <text>相关内容</text>
+    <text bindtap='moreBtn'>查看全部</text>
+  </view>
+
+  <view class='content'>
+    <block wx:for="{{listArray}}">
+      <view class='specialist' bindtap='particularsBtn'>
+        <view class='person-pic'>
+          <image src='{{item.img}}'></image>
+        </view>
+        <view class='article'>
+          <text class='title'>{{item.title}}</text>
+          <text class='synopsis'>{{item.synopsis}}</text>
+          <text class='update'>{{item.update}}</text>
+          <text class='extra'>{{item.extra}}</text>
+        </view>
+        <view class='purcharse'>
+          <text>99$</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class='feature'>
+    <text class='free'>免费试读</text>
+    <text class='money'>99￥/立即购买</text>
+  </view>
+</view>

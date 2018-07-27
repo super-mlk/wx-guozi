@@ -1,0 +1,24 @@
+<view class="container">
+  <view class='listSqlList'>
+    <block wx:for="{{sqlList}}">
+      <view class='listsql' bindtap='sqllist' data-id="{{item.id}}">
+        <view class='ls-pic'>
+          <image src='{{item.img}}'></image>
+        </view>
+        <view class='ls-main'>
+          <view class='ls-top'>
+            <text class='ls-title'>{{item.title}}</text>
+            <text class='money'>{{item.money}}</text>
+          </view>
+          <view class='ls-content'>
+            <text class='ls-info'>{{item.info}}</text>
+          </view>
+          <!-- 右箭头 -->
+          <view class='ls-right'>
+            <image src='{{item.rightPic}}'></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

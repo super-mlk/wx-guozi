@@ -1,0 +1,27 @@
+<!--专家列表-->
+<view class='container'>
+  <view class='content'>
+    <block wx:for="{{listArray}}">
+      <view class='specialist' bindtap='particularsBtn'>
+        <view class='person-pic'>
+          <image src='{{item.img}}'></image>
+        </view>
+        <view class='article'>
+          <text class='title'>{{item.title}}</text>
+          <text class='synopsis'>{{item.synopsis}}</text>
+          <text class='update'>{{item.update}}</text>
+          <view class='extra'>
+            <text>{{item.money}}</text>
+            <text>{{item.course}}</text>
+          </view>
+        </view>
+        <view class='info'>
+          <text>{{item.purchase}}</text>
+        </view>
+        <view class='right-pic'>
+          <image src='../../assets/img/right.png'></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

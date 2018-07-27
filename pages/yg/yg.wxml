@@ -1,0 +1,123 @@
+<!--pages/purchased/purchased.wxml-->
+<view class='container'>
+  <!--头部  -->
+  <view class='headerSearch'>
+    <view class='sousuo'>
+      <image src='../../assets/img/search.png'></image>
+      <input type='text' placeholder='搜索'></input>
+    </view>
+    <view class='quxiao' bindtap='quxiao'>
+      <text>取消</text>
+    </view>
+  </view>
+
+  <!--最近购买部分  -->
+  <view class='recent'>
+    <view class='recent-title' bindtap='changeState'>
+      <text>{{recentinfo}}</text>
+      <image src='{{jiantou}}'></image>
+    </view>
+    <view class='recent-pic' bindtap='change'>
+      <image src='{{list}}'></image>
+    </view>
+    <!--下拉列表  -->
+    <view class='select' wx:if="{{select}}">
+      <view class='recently' data-postId="0" bindtap='recentbtn' data-title="最近阅读">
+        <text>最近阅读</text>
+        <view>
+          <image src='{{gou}}' wx:if="{{goucurrent == 0 ? true : false}}"></image>
+        </view>
+      </view>
+      <view class='recently' data-postId="1" bindtap='recentbtn' data-title="最近购买">
+        <text>最近购买</text>
+        <view>
+          <image src='{{gou}}' wx:if="{{goucurrent == 1 ? true : false}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='yulan'>
+    <block wx:for="{{purcharseArray}}">
+      <view class='onlineYulan'  bindtap='onlineyulanClick'>
+        <view class='oy-pic'>
+          <image src='{{item.img}}'></image>
+        </view>
+        <view class='oy-content'>
+          <text class='oy-title'>{{item.title}}</text>
+          <text class='oy-introduce'>{{item.introduce}}</text>
+          <text class='oy-num'>数据:{{item.num}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+
+  <!--每日推荐部分  -->
+  <view class='tuijian'>
+    <view class='tuijian-header'>每日推荐</view>
+    <view class='tuijian-content'>
+      <view class='tc-left'>
+        <image src='../../assets/img/report1.jpg'></image>
+      </view>
+      <view class='tc-right'>
+        <view class='tcr-title'>
+          <text>重构医疗生产关系，带来商业新生态一医联体商业价值报告</text>
+        </view>
+        <view class='tcr-content'>
+          本报告从医疗资源流动的角度入手，挖掘医联体改革的本质，深度剖析.....
+        </view>
+        <view class='tcr-bottom'>
+          <text>下载</text>
+          <text>在线观看</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='list' wx:if="{{current == 1 ? true : false}}">
+    <view class='list-top'>
+      <text>其他</text>
+      <text>查看全部3个</text>
+    </view>
+
+    <block wx:for="{{listArray}}">
+      <view class='list-content'>
+        <view class='lc-left'>
+          <image src='{{item.pic}}'></image>
+        </view>
+        <view class='lc-right'>
+          <view>
+            <text>{{item.title}}</text>
+          </view>
+          <view>
+            <text>{{item.time}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class='list2' wx:if="{{current == 0 ? true : false}}">
+    <view class='list2-top'>
+      <text>其他</text>
+      <text>查看全部3个</text>
+    </view>
+    <view class='h-content'>
+      <view class='pic first'>
+        <image src='../../assets/img/report1.jpg'></image>
+        <text>新用户专享:心理学知识...</text>
+      </view>
+      <view class='pic second'>
+        <image src='../../assets/img/report2.jpg'></image>
+        <text>新用户专享:心理学知识...</text>
+      </view>
+      <view class='pic three'>
+        <image src='../../assets/img/report3.jpg'></image>
+        <text>新用户专享:心理学知识...</text>
+      </view>
+    </view>
+  </view>
+
+
+</view>

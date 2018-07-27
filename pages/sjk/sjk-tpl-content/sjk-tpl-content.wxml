@@ -1,0 +1,18 @@
+<template name="sjkTplContent">
+    <view class='content'>
+        <block wx:for="{{listArray}}">
+            <view class='specialist' bindtap='particularsBtn' data-zxbh="{{item.zxbh}}">
+
+                <view class='article'>
+                    <text class='title'>{{index+1}}.{{item.mc}}</text>
+                    <text class='synopsis'>{{item.zy}}</text>
+                    <view class='time-info'>
+                        <text class='update'>{{item.fbrq}}</text>
+                        <text class='update'> | </text>
+                        <text class='extra'>{{item.sjly}}</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</template>

@@ -1,0 +1,107 @@
+
+
+/*专家列表  */
+
+.content {
+    margin-top: 20rpx;
+}
+
+.content .specialist {
+    width: 100%;
+    height: auto;
+}
+
+.content .specialist .article {
+    width: 96%;
+    height: auto;
+    margin: 20rpx auto 20rpx;
+    border-bottom: 1px solid #ccc;
+}
+
+.content .specialist .article text {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 16rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content .specialist .article .title {
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+.content .specialist .article .synopsis {
+    font-size: 26rpx;
+    color: #808080;
+    width: 96%;
+    text-align: left;
+}
+
+.content .specialist .article .time-info {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.content .specialist .article .time-info text {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.content .specialist .article .time-info .update {
+    font-size: 24rpx;
+    color: #808080;
+    margin-right: 10rpx;
+}
+
+.content .specialist .article .time-info .extra {
+    font-size: 24rpx;
+    color: #4c4c4c;
+}
+
+/* .specialist .article .update {
+    width: 100%;
+    height: auto;
+  
+}
+
+.content .specialist .article .extra {
+  
+    margin-bottom: 0;
+} */
+
+.content .specialist .info {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 20rpx;
+    top: 4rpx;
+}
+
+.content .specialist .info text {
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size: 40rpx;
+    color: #999;
+    text-align: right;
+}
+
+.content .specialist .info text:first-child {
+    font-size: 28rpx;
+    color: #ff6f07;
+    padding-bottom: 8rpx;
+}
+
+.guding {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 99;
+}

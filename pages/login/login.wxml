@@ -1,0 +1,24 @@
+<view class='container'>
+  <view class='header'>
+    <view class='headPortraits'>
+        <image src='../../assets/img/personPic.jpg'></image>
+    </view>
+    <view class='vip'>
+      <text>普通会员</text>
+    </view>
+  </view>
+  <view class='login' bindtap='login'>
+    <view class='icon' bindtap='login'>
+        <image src='../../assets/img/login.png'></image>
+        <text >登录</text>
+    </view>
+    <view class='more'>
+      <text>></text>
+    </view>
+  </view>
+  <view class='footer'>
+    <text>隐私条款</text>
+    <text>|</text>
+    <text>会员介绍</text>
+  </view>
+</view>

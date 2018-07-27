@@ -1,0 +1,32 @@
+<import src="../sjk-tpl-nav/sjk-tpl-nav.wxml" />
+<!-- <import src="../sjk-tpl-content/sjk-tpl-content.wxml"/> -->
+<scroll-view class="sv" scroll-y bindscolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+    <view class='banner'>
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{isVertical}}" duration="{{duration}}" circular='false' indicator-color='{{indicatorcolor}}' indicator-active-color='{{indicatoractivecolor}}'>
+            <swiper-item wx:for="{{imgUrls}}">
+                <image src="{{item}}" bindtap='bannerClick' />
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <template is="sjkTplBanner" data="{{navData,currentTab}}"></template>
+    <view class='content'>
+        <block wx:for="{{listArray}}">
+            <view class='specialist' bindtap='particularsBtn' data-zxbh="{{item.zxbh}}">
+
+                <view class='article'>
+                    <text class='title'>{{index+1}}.{{item.bt}}</text>
+                    <text class='synopsis'>{{item.zz}}</text>
+                    <view class='time-info'>
+                        <text class='update'>{{item.zzdw}}</text>
+                        <text class='update'> | </text>
+                        <text class='extra'>{{item.ywfbrq}}</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</scroll-view>
+
+<!-- loading -->
+<loading hidden="{{hiddenLoading}}"></loading>

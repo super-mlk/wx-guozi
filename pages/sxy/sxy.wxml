@@ -1,0 +1,70 @@
+<!--商学院  -->
+<view class='container'>
+  <view class='tab'>
+    <view class='tab-ranking' class="{{tabbg==1?'active':''}}">
+      <text data-tabnum='1' bindtap='tabClick'>推荐排行</text>
+      <image class="jiantou1" src='{{jiantou1}}'></image>
+    </view>
+    <view class='tab-theme' class="{{tabbg==2?'active':''}}">
+      <text data-tabnum='2' bindtap='tabClick'>推荐主题</text>
+      <image src='{{jiantou2}}' class="jiantou2"></image>
+    </view>
+    <view class='tab-year' class="{{tabbg==3?'active':''}}">
+      <text data-tabnum='3' bindtap='tabClick'>推荐年份</text>
+      <image src='{{jiantou3}}' class="jiantou3"></image>
+    </view>
+  </view>
+
+  <view class='onlineVideo'>
+    <block wx:for="{{listArray}}">
+      <!-- <navigator url='../onlineVideo/onlineVideo?videoindex={{index}}'  wx:for="{{listArray}}"> -->
+        <view class='ov-list' bindtap='onlineVideo' data-videonum="{{index}}">
+          <view class='ov-left'>
+            <image src='{{item.img}}'></image>
+          </view>
+          <view class='ov-right'>
+            <text class='ovr-title'>{{item.title}}</text>
+            <text class='ovr-nameInfo'>{{item.name}} | {{item.companyInfo}}</text>
+            <text class='ovr-time'>{{item.time}}</text>
+          </view>
+        </view>
+      <!-- </navigator> -->
+    </block>
+  </view>
+
+
+  <!--分类  -->
+  <!--排行分类  -->
+  <view class='Ranking-classification' wx:if="{{show == 1}}">
+    <text class="{{bg==1?'active':''}}" bindtap="menuClick" data-num='1'>推荐排行</text>
+    <text class="{{bg==2?'active':''}}" bindtap="menuClick" data-num='2'>今天最热</text>
+    <text class="{{bg==3?'active':''}}" bindtap="menuClick" data-num='3'>一周最热</text>
+    <text class="{{bg==4?'active':''}}" bindtap="menuClick" data-num='4'>月度最热</text>
+    <text class="{{bg==5?'active':''}}" bindtap="menuClick" data-num='5'>用户好评</text>
+  </view>
+  <!--主题分类  -->
+  <view class='Ranking-classification' wx:if="{{show == 2}}">
+    <text class="{{bg==11?'active':''}}" bindtap="menuClick" data-num='11'>政策</text>
+    <text class="{{bg==12?'active':''}}" bindtap="menuClick" data-num='12'>监管</text>
+    <text class="{{bg==13?'active':''}}" bindtap="menuClick" data-num='13'>运营</text>
+    <text class="{{bg==14?'active':''}}" bindtap="menuClick" data-num='14'>治理</text>
+    <text class="{{bg==15?'active':''}}" bindtap="menuClick" data-num='15'>混改</text>
+    <text class="{{bg==16?'active':''}}" bindtap="menuClick" data-num='16'>激励</text>
+    <text class="{{bg==17?'active':''}}" bindtap="menuClick" data-num='17'>创新</text>
+    <text class="{{bg==18?'active':''}}" bindtap="menuClick" data-num='18'>党建</text>
+    <text class="{{bg==19?'active':''}}" bindtap="menuClick" data-num='19'>其他</text>
+  </view>
+
+  <!--年份分类  -->
+  <view class='Ranking-classification' wx:if="{{show == 3}}">
+    <text class="{{bg==21?'active':''}}" bindtap="menuClick" data-num='21'>2018</text>
+    <text class="{{bg==22?'active':''}}" bindtap="menuClick" data-num='22'>2017</text>
+    <text class="{{bg==23?'active':''}}" bindtap="menuClick" data-num='23'>2016</text>
+    <text class="{{bg==24?'active':''}}" bindtap="menuClick" data-num='24'>2015</text>
+    <text class="{{bg==25?'active':''}}" bindtap="menuClick" data-num='25'>2014</text>
+    <text class="{{bg==26?'active':''}}" bindtap="menuClick" data-num='26'>2013</text>
+    <text class="{{bg==27?'active':''}}" bindtap="menuClick" data-num='27'>2012</text>
+    <text class="{{bg==28?'active':''}}" bindtap="menuClick" data-num='28'>2011</text>
+    <text class="{{bg==29?'active':''}}" bindtap="menuClick" data-num='29'>其他</text>
+  </view>
+</view>

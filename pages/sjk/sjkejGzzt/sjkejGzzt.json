@@ -1,0 +1,7 @@
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2da1dc",
+    "navigationBarTitleText": "国资研究专题库",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+}

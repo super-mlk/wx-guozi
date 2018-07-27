@@ -1,0 +1,20 @@
+@import "../sjk-tpl-content/sjk-tpl-content.wxss";
+@import "../sjk-tpl-nav/sjk-tpl-nav.wxss";
+
+.sv {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 150px;
+}
+
+.banner image {
+    width: 100%;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+}

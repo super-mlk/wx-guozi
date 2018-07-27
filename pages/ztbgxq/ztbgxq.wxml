@@ -1,0 +1,96 @@
+<view class="container">
+  <view class='header'>
+    <view class='header-pic'>
+      <image src='../../assets/img/report1.jpg'></image>
+    </view>
+    <view class='header-content'>
+      <p>重构医疗生产关系，带来商业新生态---医联体商业价值报告</p>
+      <text>
+        本报告从医疗资源滚动的角度入手，挖掘医联体改革的本质，深度剖析医联体所带来的未来商业机会与全新医疗生态，助力企业战略升级。
+      </text>
+    </view>
+  </view>
+  <view class='vip'>
+    <text>会员免费</text>
+    <text>成为会员 ></text>
+  </view>
+
+  <!--底部介绍  -->
+  <view class='swiper-tab'>
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' :'' }}" data-current="0" bindtap="swichNav">
+      导言
+    </view>
+    <view class="swiper-tab-list {{currentTab == 1 ? 'on' :''}}" data-current="1" bindtap='swichNav'>
+      目录
+    </view>
+  </view>
+  <view class='content-bg'>
+    <view class="swiper-box">
+      <view wx:if="{{currentTab == 0 ? true : false}}" class='preamble'>
+        <text>产业生态重构必然会带来商业机会</text>
+        <text>
+          产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会产业生态重构必然会带来商业机会.
+        </text>
+      </view>
+      <view wx:if="{{currentTab == 1 ? true : false}}" class='mulu'>
+        <text>第一章 医联体重构医疗生产关系，资源价值全面提升</text>
+        <view>
+          <p>1、医疗资源固话与失衡，阻碍我国医疗服务能力的提升</p>
+          <p>2、破解行业难题，建立资源流通机制</p>
+          <p>3、数量超过5000家，医联体运作带来实际效能</p>
+          <p>4、六个维度，分析各型医联体差异</p>
+          <p>5、管理问题成医联体落地最大阻碍，目前基层医疗服务能力并不是影响医联体落地的原因</p>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='footer'>
+    <view class='function'>
+      <view class='fun fun-one'>
+        <button bindtap='onShareAppMessage' open-type="share">
+          <image src='../../assets/img/share.png'></image>
+          <text>分享</text>
+        </button>
+      </view>
+      <view class='fun fun-two' bindtap='homeBtn'>
+        <button>
+          <image src='../../assets/img/details-home.png'></image>
+          <text>主页</text>
+        </button>
+      </view>
+      <view class=' fun fun-three'>
+        <button bindtap='bindViewTap'>
+          <image src='../../assets/img/Playtour.png'></image>
+          <text>打赏</text>
+        </button>
+      </view>
+      <view class='fun fun-four'>
+        <button>
+          <image src='../../assets/img/download.png'></image>
+          <text>VIP下载</text>
+        </button>
+      </view>
+    </view>
+    <view class='readerReport'>
+      <view class='rp-bg'>
+        <text>365￥/立即购买</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--打赏对话框  -->
+<view class='play-tour'>  
+  <modal title="感谢您的打赏" hidden="{{modalHidden}}" confirm-text="确定"  
+  cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">  
+    <input type='number' placeholder='请输入任意金额' min="1" max="100" value='{{searchinput}}'/>
+    <view class='money'>
+      <text data-num="1" data-money="10" class="{{bg==1?'active':''}}"  bindtap='ptClick'>{{one}}</text>
+      <text data-num="2" data-money="20" class="{{bg==2?'active':''}}"  bindtap='ptClick'>{{two}}</text>
+      <text data-num="3" data-money="30" class="{{bg==3?'active':''}}"  bindtap='ptClick'>{{three}}</text>
+      <text data-num="4" data-money="40" class="{{bg==4?'active':''}}"  bindtap='ptClick'>{{four}}</text>
+      <text data-num="5" data-money="50" class="{{bg==5?'active':''}}"  bindtap='ptClick'>{{five}}</text>
+      <text data-num="6" data-money="60" class="{{bg==6?'active':''}}"  bindtap='ptClick'>{{six}}</text>
+    </view>
+  </modal>  
+</view> 

@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#2da1dc",
+  "navigationBarTitleText": "一带一路数据平台",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh":true
+}

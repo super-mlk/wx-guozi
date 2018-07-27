@@ -1,0 +1,250 @@
+/* pages/reconsitutionMedical/reconsitutionMedical.wxss */
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/*头部  */
+
+.container .header {
+  width: 100%;
+  height: 460rpx;
+}
+
+/*头部图片  */
+
+.container .header .header-pic {
+  width: 100%;
+  height: 200rpx;
+  text-align: center;
+}
+
+.container .header .header-pic image {
+  width: 50%;
+  height: 200rpx;
+  box-shadow: 4rpx 4rpx 4rpx #eee;
+  margin-top: 20rpx;
+}
+
+/*头部内容  */
+
+.container .header .header-content {
+  width: 90%;
+  height: 160rpx;
+  margin-top: 40rpx;
+  font-family: "微软雅黑";
+  margin-left: 10px;
+}
+
+.container .header .header-content p {
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.container .header .header-content text {
+  font-size: 24rpx;
+  color: #333;
+}
+
+/*会员  */
+
+.container .vip {
+  width: 100%;
+  height: 80rpx;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  margin-top: 40rpx;
+}
+
+.container .vip text:first-child {
+  float: left;
+  margin-left: 12rpx;
+  color: orange;
+}
+
+.container .vip text:last-child {
+  float: right;
+  margin-right: 42rpx;
+  color: #c3c3c3;
+}
+
+/*底部内容  */
+
+.swiper-tab {
+  width: 100%;
+  text-align: left;
+  line-height: 100rpx;
+  background-color: #f9f9f9;
+}
+
+.swiper-tab-list {
+  font-size: 26rpx;
+  display: inline-block;
+  width: 13.3%;
+  height: 40rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  line-height: 40rpx;
+  color: #000;
+  margin-left: 20rpx;
+}
+
+.on {
+  border-radius: 4px;
+  color: #fff;
+  background-color: #ff8824;
+  border-top: 2px solid #ff8824;
+  border-bottom: 2px solid #ff8824;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-left: 20rpx;
+}
+
+.swiper-box view {
+  text-align: left;
+}
+
+.swiper-box .preamble text {
+  width: 100%;
+  height: 120rpx;
+  display: block;
+  line-height: 120rpx;
+  font-size: 32rpx;
+}
+
+.swiper-box .preamble text {
+  width: 92%;
+  height: auto;
+  line-height: 1.4;
+  font-size: 28rpx;
+}
+
+.swiper-box .preamble text:nth-child(2) {
+  margin-bottom: 136rpx;
+}
+
+/*内容背景  */
+
+.content-bg {
+  background: #f9f9f9;
+}
+
+.swiper-box .mulu text {
+  width: 100%;
+  height: 120rpx;
+  display: block;
+  font-size: 32rpx;
+  padding-top: 20rpx;
+}
+
+.swiper-box .mulu view {
+  font-size: 28rpx;
+  margin-bottom: 116rpx;
+}
+
+.swiper-box .mulu view p {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*底部分享  */
+
+.footer {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #eee;
+}
+
+.footer .function {
+  width: 58%;
+  height: 100rpx;
+  float: left;
+}
+
+.footer .function .fun {
+  width: 24%;
+  height: 100rpx;
+  float: left;
+  text-align: center;
+}
+
+
+.footer .function .fun button {
+  width: 100%;
+  height: 100rpx;
+  font-size: 24rpx;
+  position: relative;
+  background: none;
+}
+
+.footer .function .fun button::after {
+  border: none;
+}
+
+.footer .function .fun button image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.footer .function .fun button text {
+  width: 100%;
+  height: auto;
+  font-size: 24rpx;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .readerReport {
+  width: 42%;
+  height: 100rpx;
+  float: right;
+  background: #2da1dc;
+  border-radius: 4px 4px 0 0;
+}
+
+.footer .readerReport .rp-bg {
+  text-align: center;
+  line-height: 84rpx;
+  margin: 8rpx auto 0;
+}
+
+.footer .readerReport .rp-bg text {
+  color: #fff;
+  font-size: 24rpx;
+  letter-spacing: 4rpx;
+}
+
+/*打赏  */
+.play-tour .money{
+  width: 100%;
+  height:126rpx;
+  margin-top:20rpx;
+}
+
+.play-tour .money .active{
+  background: #e6e6e6;
+}
+
+.play-tour .money text{
+  width: 32%;
+  height: auto;
+  border:1px solid #e8e8e8;
+  float: left;
+  text-align: center;
+  padding: 12rpx 0 12rpx 0;
+}

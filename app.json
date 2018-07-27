@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/sxy/sxy",
+    "pages/zjjz/zjjz",
+    "pages/zjjzxq/zjjzxq",
+    "pages/sjk/sjkejGzzt/sjkejGzzt",
+    "pages/sjk/sjkejGzzt/sjkGzztxq/sjkGzztxq",
+    "pages/sjk/sjk",
+    "pages/sxyxq/sxyxq",
+    "pages/customer/customer",
+    "pages/yg/yg",
+    "pages/ztbgxq/ztbgxq",
+    "pages/search/search",
+    "pages/ztbg/ztbg",
+    "pages/sjkej/sjkej",
+    "pages/sjkxq/sjkxq",
+    "pages/login/login",    
+    "pages/out/out"
+  ],
+  "tabBar": {
+    "color": "#909090",
+    "borderStyle": "black",
+    "selectedColor": "#2da1dc",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/img/home.png",
+        "selectedIconPath": "assets/img/home_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/sjk/sjk",
+        "iconPath": "assets/img/sql1.png",
+        "selectedIconPath": "assets/img/sql_active.png",
+        "text": "数据库"
+      },
+      {
+        "pagePath": "pages/sxy/sxy",
+        "iconPath": "assets/img/academy.png",
+        "selectedIconPath": "assets/img/academy_active.png",
+        "text": "商学院"
+      },
+      {
+        "pagePath": "pages/yg/yg",
+        "iconPath": "assets/img/Purchased.png",
+        "selectedIconPath": "assets/img/Purchased-active.png",
+        "text": " 已购"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "iconPath": "assets/img/me.png",
+        "selectedIconPath": "assets/img/me_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2da1dc",
+    "navigationBarTitleText": "国资研究——打造国企改革的知识社区",
+    "navigationBarTextStyle": "white"
+  }
+}

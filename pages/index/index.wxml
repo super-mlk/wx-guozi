@@ -1,0 +1,94 @@
+<!--index.wxml-->
+<view class='content'>
+  <view class='headerSearch'>
+    <view class='sousuo' bindtap='search'>
+    <image src='../../assets/img/search.png'></image>
+      <span>
+        搜索文章、报告
+      </span>
+    </view>
+  </view>
+  <view class='banner'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{isVertical}}" duration="{{duration}}" circular='false' indicator-color='{{indicatorcolor}}' indicator-active-color='{{indicatoractivecolor}}'>
+      <swiper-item wx:for="{{imgUrls}}">
+        <image src="{{item}}" bindtap='bannerClick'/>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='nav'>
+    <view class='publicNav nav-one'>
+      <span class="bannner-info">
+        <image src='../../assets/img/heng1.png'></image>
+        <span>政策法规</span>
+      </span>
+    </view>
+    <view class='publicNav nav-two' bindtap='report'>
+      <span class="bannner-info">
+        <image src='../../assets/img/heng2.png'></image>
+        <span>专题报告</span>
+      </span>
+    </view>
+    <view class='publicNav nav-four'>
+      <span class="bannner-info">
+        <image src='../../assets/img/heng3.png'></image>
+        <span>精品内参</span>
+      </span>
+
+    </view>
+    <view class='publicNav nav-three'>
+      <span class="bannner-info">
+        <image src='../../assets/img/heng4.png'></image>
+        <span>改革案例</span>
+      </span>
+
+    </view>
+    <view class='publicNav nav-five' bindtap='specialistBtn'>
+      <span class="bannner-info">
+        <image src='../../assets/img/heng5.png'></image>
+        <span>专家讲座</span>
+      </span>
+    </view>
+  </view>
+  <view class='hr'>
+  </view>
+  <view class='new-information'>
+    <view class='introduce'>
+      <span>最新资讯</span>
+      <span bindtap="newInformation">查看更多 ></span>
+    </view>
+    <block wx:for="{{newInformation}}" wx:key="">
+      <view class='newInfo' bindtap='reconsitutionMedical'>
+      <view class='info'>
+        <p>{{item.paragraph}}</p>
+        <span>
+          {{item.text}}
+        </span>
+      </view>
+      <view class='pic'>
+        <image src='{{item.img}}'></image>
+      </view>
+    </view>
+    </block>
+   
+  </view>
+  <view class='hr'>
+  </view>
+  <view class='new-information'>
+    <view class='introduce'>
+      <span>最新报告</span>
+      <span bindtap="newInformation">查看更多 ></span>
+    </view>
+   <block wx:for="{{newReport}}" wx:key="">
+     <view class='newInfo' bindtap='reconsitutionMedical'>
+      <view class='info'>
+        <p>{{item.paragraph}}</p>
+        <span> {{item.text}}</span>
+      </view>
+      <view class='pic'>
+        <image src='{{item.img}}'></image>
+      </view>
+    </view>
+   </block>
+  </view>
+
+</view>

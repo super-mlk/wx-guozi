@@ -1,0 +1,31 @@
+
+/*tab  */
+
+.nav {
+    height: 88rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 80rpx;
+    background: #fff;
+    font-size: 32rpx;
+    white-space: nowrap;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav view:nth-child(1) {
+    margin-left: 20rpx;
+}
+
+.nav-item {
+    display: inline-block;
+    text-align: center;
+    font-size: 28rpx;
+    height: auto;
+    margin-right: 20rpx;
+}
+
+.active {
+    color: #2da1dc;
+    border-bottom: 2px solid #2da1dc;
+}

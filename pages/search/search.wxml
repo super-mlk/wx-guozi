@@ -1,0 +1,28 @@
+<view class="container">
+  <!--头部  -->
+  <view class='headerSearch'>
+    <view class='sousuo'>
+      <image src='../../assets/img/search.png'></image>
+      <input type='text' placeholder='搜索' auto-focus></input>
+    </view>
+    <view class='quxiao' bindtap='quxiao'>
+      <text>取消</text>
+    </view>
+  </view>
+  <!--导航  -->
+  <view class='nav'>
+    <view class="nav-info">
+      <block wx:for="{{catalogs}}">
+        <span data-select="{{item.select}}" class="{{item.select == catalogSelect ? 'nav-active':''}}" bindtap="chooseCatalog">{{item.catalogName}}</span>
+      </block>
+      <!-- <span class="nav-active">资讯</span>
+      <span>报告</span>
+      <span>公司机构</span> -->
+    </view>
+  </view>
+
+  <!--搜索历史  -->
+  <view class='searchHistory'>
+    <text>暂无搜索历史</text>
+  </view>
+</view>

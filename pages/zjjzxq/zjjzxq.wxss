@@ -1,0 +1,205 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.container .header {
+  width: 100%;
+  height: 280rpx;
+  position: relative;
+}
+
+.container .header image {
+  width: 100%;
+  height: 280rpx;
+}
+
+.container .header .header-introduce {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 24rpx;
+  left: 0;
+}
+
+.container .header .header-introduce text {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.container .header .header-introduce text:first-child {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.container .header .header-introduce text:last-child {
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+
+/*分享  */
+.container .header .shangchuan{
+  width: 100rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  text-align: center;
+}
+
+.container .header .shangchuan button{
+  width: 100rpx;
+  height: 60rpx;
+  background: none;
+}
+
+.container .header .shangchuan button::after{
+  border: none;
+}
+
+.container .header .shangchuan button image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.container .course {
+  width: 90%;
+  height: auto;
+  border-bottom: 1px solid #e8e8e8;
+  margin: 0 auto;
+}
+
+.container .course .course-header {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+}
+
+.container .course .course-header text:first-child {
+  float: left;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.container .course .course-header text:last-child {
+  float: right;
+  font-size: 24rpx;
+  color: #b8b8b8;
+}
+
+.container .course .course-synopsis {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container .course .course-synopsis text {
+  width: 100%;
+  height: auto;
+  display: block;
+  font-size: 28rpx;
+  margin-bottom: 40rpx;
+}
+
+.container .course .course-synopsis .lookAll {
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.container .course .course-synopsis .lookAll text {
+  color: #ff6b00;
+  margin: 0;
+}
+
+.container .courseOutline {
+  width: 90%;
+  height: 440rpx;
+  margin: 40rpx auto 0px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.container .courseOutline text:first-child {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+
+.container .courseOutline text:nth-child(2) {
+  font-size: 24rpx;
+  color: #808080;  
+}
+
+.container .courseOutline image {
+  width: 100%;
+  height: 300rpx;
+  margin-top: 20rpx;
+}
+
+/*适宜人群  */
+
+.container .suitable {
+  width: 90%;
+  height: auto;
+  margin: 40rpx auto 0px;
+  padding-bottom: 40rpx;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.container .recentUpdate{
+  height: 600rpx;
+}
+
+.container .suitable-header {
+  width: 100%;
+  
+}
+
+.container .suitable-header text {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container .suitable-header text:first-child {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.container .suitable-header text:last-child {
+  font-size: 28rpx;
+  color: #7a7a7a;
+}
+
+.container .feature {
+  width: 100%;
+  height: 120rpx;
+  background: red;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.container .feature text{
+  width: 50%;
+  height: 120rpx;
+  display: block;
+  line-height: 120rpx;
+  text-align: center;
+}
+
+.container .feature text:first-child{
+  float: left;
+  background: #f4f1eb;
+}
+
+.container .feature text:last-child{
+  float: right;
+  background: #2da1dc;
+  color: #fff;
+}
